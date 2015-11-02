@@ -2,6 +2,7 @@ group 'StudentRESTWebService'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'jetty'
 
 sourceCompatibility = 1.5
 
@@ -11,4 +12,13 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'com.sun.jersey:jersey-client:1.17.1'
+    compile 'com.sun.jersey:jersey-core:1.17.1'
+    compile 'com.sun.jersey:jersey-server:1.17.1'
+    compile 'com.sun.jersey:jersey-servlet:1.17.1'
+    compile 'javax.ws.rs:javax.ws.rs-api:2.0-m01'
 }
+
+httpPort = 8080
+stopPort = 8090
+stopKey  = "stopKey"
