@@ -12,7 +12,15 @@ public class StudentServiceTest {
     @Test
     public void getHelloInHTML(){
         Client client = Client.create();
-        WebResource webResource = client.resource("http://localhost:8080/StudentRESTWebService/hello");
+        WebResource webResource = client.resource("http://localhost:8080/StudentRESTWebService/student");
+        String response = webResource.get(String.class);
+        assertEquals("Saying Hi...",response);
+    }
+
+    @Test
+    public void shouldBeAbleToAddStudent(){
+        Client client = Client.create();
+        WebResource webResource = client.resource("http://localhost:8080/StudentRESTWebService/student");
         String response = webResource.get(String.class);
         assertEquals("Saying Hi...",response);
     }
