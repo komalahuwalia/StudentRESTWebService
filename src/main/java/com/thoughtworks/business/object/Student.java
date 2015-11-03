@@ -2,10 +2,14 @@ package com.thoughtworks.business.object;
 
 import com.thoughtworks.com.thoughtworks.utility.UtilityClass;
 
-public class Student {
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
-    private final int id;
-    private final Name name;
+@XmlRootElement(name = "student")
+public class Student implements Serializable {
+
+    private int id;
+    private Name name;
 
     public Student(int id, Name name) {
         this.id = id;
@@ -27,7 +31,19 @@ public class Student {
                 && student.name.equals(this.name));
     }
 
-    public int getID() {
+    public int getId() {
         return this.id;
+    }
+
+    public Name getName() {
+        return this.name;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
     }
 }
