@@ -11,6 +11,8 @@ public class Student implements Serializable {
     private int id;
     private Name name;
 
+    public Student(){}
+
     public Student(int id, Name name) {
         this.id = id;
         this.name = name;
