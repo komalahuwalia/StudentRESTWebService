@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.repository.StudentRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-03T06:41:57" hostname="ine724008.corporate.thoughtworks.com" time="0.015">
+  <properties/>
+  <testcase name="shouldBeAbleToSearchStudentByID" classname="com.thoughtworks.repository.StudentRepositoryTest" time="0.005"/>
+  <testcase name="shouldBeAbleToThrowAnErrorWhileSearchingNonAddedStudent" classname="com.thoughtworks.repository.StudentRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
