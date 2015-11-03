@@ -2,10 +2,16 @@ package com.thoughtworks.business.object;
 
 import com.thoughtworks.com.thoughtworks.utility.UtilityClass;
 
-public class Name {
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
-    private final String fName;
-    private final String lName;
+@XmlRootElement
+public class Name implements Serializable {
+
+    private String fName;
+    private String lName;
+
+    public Name(){}
 
     public Name(String fName, String lName) {
         this.fName = fName;
@@ -24,5 +30,21 @@ public class Name {
 
         return (name.fName.equals(this.fName)
                 && name.lName.equals(this.lName));
+    }
+
+    public void setfName(String fName) {
+        this.fName = fName;
+    }
+
+    public void setlName(String lName) {
+        this.lName = lName;
+    }
+
+    public String getfName() {
+        return fName;
+    }
+
+    public String getlName() {
+        return lName;
     }
 }
