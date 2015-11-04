@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class InMemoryDataSource implements DataSource {
 
-    private Map<Integer,Student> students = new HashMap<Integer,Student>();
+    private static Map<Integer,Student> students = new HashMap<Integer,Student>();;
 
     @Override
     public void add(Student studentObj) {
@@ -15,6 +15,8 @@ public class InMemoryDataSource implements DataSource {
 
     @Override
     public Student getStudentByID(int i) {
+        System.out.println(" Count: "+students.size());
         return students.get(i);
     }
+
 }

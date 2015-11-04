@@ -48,4 +48,9 @@ public class Student implements Serializable {
     public void setName(Name name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "ID: "+this.id +", Name: "+this.name;
+    }
 }

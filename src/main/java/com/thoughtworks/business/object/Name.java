@@ -47,4 +47,9 @@ public class Name implements Serializable {
     public String getlName() {
         return lName;
     }
+
+    @Override
+    public String toString() {
+        return "FirstName: "+this.fName+", LastName: "+this.lName;
+    }
 }
