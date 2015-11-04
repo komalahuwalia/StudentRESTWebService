@@ -43,9 +43,7 @@ public class StudentService {
     @Produces(MediaType.APPLICATION_JSON)
     public Response find(@PathParam("id") String id){
         try {
-            System.out.println(id);
             Student student = dataSource.getStudentByID(Integer.parseInt(id));
-            System.out.println(" Stu : "+student);
             return Response.ok(student, MediaType.APPLICATION_JSON).build();
         } catch (Exception e) {
             e.printStackTrace();
@@ -53,5 +51,12 @@ public class StudentService {
         return Response.ok("Error", MediaType.APPLICATION_JSON).build();
     }
 
+    @PUT
+    @Path("/update")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateStudent(Student student){
+        dataSource.updateStudent(student);
+        return Response.ok("OK", MediaType.TEXT_HTML).build();
+    }
 
 }

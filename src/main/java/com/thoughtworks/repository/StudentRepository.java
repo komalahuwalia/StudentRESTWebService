@@ -21,4 +21,8 @@ public class StudentRepository {
         else
             return studentObj;
     }
+
+    public void updateStudent(Student studentObj) {
+        dataSource.updateStudent(studentObj);
+    }
 }
