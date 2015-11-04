@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.StudentServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-04T07:12:27" hostname="INKomalahl.local" time="0.338">
+<testsuite name="com.thoughtworks.StudentServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-04T10:31:35" hostname="ine724008.corporate.thoughtworks.com" time="0.533">
   <properties/>
-  <testcase name="getHelloInHTML" classname="com.thoughtworks.StudentServiceTest" time="0.237"/>
-  <testcase name="shouldBeAbleToAddStudent" classname="com.thoughtworks.StudentServiceTest" time="0.1"/>
-  <system-out><![CDATA[{"id":1,"name":{"fName":"A","lName":"B"}}
+  <testcase name="shouldBeAbleToUpdateExistingStudentDetails" classname="com.thoughtworks.StudentServiceTest" time="0.533"/>
+  <system-out><![CDATA[ID: 1, Name: FirstName: jkl, LastName: xyz
+ID: 1, Name: FirstName: jkl, LastName: xyz
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

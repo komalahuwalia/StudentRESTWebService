@@ -15,8 +15,12 @@ public class InMemoryDataSource implements DataSource {
 
     @Override
     public Student getStudentByID(int i) {
-        System.out.println(" Count: "+students.size());
         return students.get(i);
+    }
+
+    @Override
+    public void updateStudent(Student studentObj) {
+        students.put(studentObj.getId(), studentObj);
     }
 
 }

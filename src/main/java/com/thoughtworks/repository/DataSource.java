@@ -7,4 +7,6 @@ public interface DataSource {
     void add(Student studentObj);
 
     Student getStudentByID(int i) throws Exception;
+
+    void updateStudent(Student studentObj);
 }
